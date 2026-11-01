@@ -23,7 +23,7 @@ or a phone.
 | Pools | add, edit, reorder and remove pools |
 | Tuner | finds and confirms good clock and voltage settings; saves them as presets |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | password, notifications (Telegram or Discord), display units, restart and reboot |
+| Settings | password, SSH, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
@@ -34,7 +34,7 @@ or a phone.
 | Goldshell cloud | on (hub.goldshell.com) | cut off |
 | Login | shared default password | `admin` / `admin`, then you must choose a new one |
 | Wi-Fi, mDNS, test programs | installed | removed (the board has no Wi-Fi chip) |
-| SSH host keys | the same on every unit | removed |
+| SSH | none | built in on port 22, using the panel's username and password (shell, `scp`, `sftp`) |
 | Time sync | servers in China | pool.ntp.org, retried until the network is up |
 | Verbose share log | not available | toggle in the Log tab; survives reboots |
 
@@ -45,7 +45,8 @@ or a phone.
 2. Miner **off**, insert the card, power **on**.
 3. Red and green blink while it writes (about 2 min). When **only green blinks**, pull the card; the
    miner reboots by itself.
-4. Open `http://<miner-ip>/`, sign in with `admin` / `admin`, and set your password.
+4. Open `http://<miner-ip>/`, sign in with `admin` / `admin`, and set your password. The same
+   username and password work for SSH: `ssh <username>@<miner-ip>`.
 5. Add your pool in the **Pools** tab. Mining starts within about a minute.
 
 The full steps, troubleshooting and how to go back to stock are in the
