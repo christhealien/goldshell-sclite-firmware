@@ -23,7 +23,7 @@ or a phone.
 | Pools | add, edit, reorder and remove pools |
 | Tuner | finds and confirms good clock and voltage settings; saves them as presets |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | password, SSH, power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
+| Settings | password, SSH, chip trims (experimental), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
