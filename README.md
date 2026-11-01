@@ -16,14 +16,14 @@ or a phone.
 
 | Tab | What it does |
 |---|---|
-| Dashboard | live hashrate, temperatures, fans and shares; 24-hour hashrate chart; best-share record; chip map |
+| Dashboard | live hashrate, temperatures, fans and shares; power and J/TH (calibrate with a wall meter); 24-hour hashrate chart; best-share record; chip map |
 | Controls & fan | clock and voltage; fan curves (built-in, your own, and tuner-made, all editable) |
 | Presets | saved clock, voltage and fan settings, switched in one click |
 | Schedule | presets by time and day; scheduled restarts |
 | Pools | add, edit, reorder and remove pools |
 | Tuner | finds and confirms good clock and voltage settings; saves them as presets |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | password, SSH, time zone, notifications (Telegram or Discord), display units, restart and reboot |
+| Settings | password, SSH, power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
