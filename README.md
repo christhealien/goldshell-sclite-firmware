@@ -23,7 +23,7 @@ or a phone.
 | Pools | add, edit, reorder and remove pools |
 | Tuner | finds and confirms good clock and voltage settings; saves them as presets |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | password, SSH, chip trims (experimental), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
+| Settings | password, SSH, MAC address, chip trims (experimental), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
@@ -36,6 +36,7 @@ or a phone.
 | Wi-Fi, mDNS, test programs | installed | removed (the board has no Wi-Fi chip) |
 | SSH | none | built in on port 22, using the panel's username and password (shell, `scp`, `sftp`) |
 | Time sync | servers in China, time zone fixed to China | pool.ntp.org, retried until the network is up; time zone from your browser |
+| MAC address | random at every boot on some units (the board can't store it) | kept the same by default; or random each boot, or one you choose (Settings → Network & SSH) |
 | Verbose share log | not available | toggle in the Log tab; survives reboots |
 
 ### Install (short version)
