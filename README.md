@@ -23,7 +23,7 @@ or a phone.
 | Pools | add, edit, reorder and remove pools |
 | Tuner | finds and confirms good clock and voltage settings; saves them as presets |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | password, SSH, MAC address, chip trims (experimental, with a self-test and a downloadable report), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
+| Settings | firmware update, password, SSH, MAC address, chip trims (experimental, with a self-test and a downloadable report), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
@@ -49,6 +49,14 @@ or a phone.
 4. Open `http://<miner-ip>/`, sign in with `admin` / `admin`, and set your password. The same
    username and password work for SSH: `ssh <username>@<miner-ip>`.
 5. Add your pool in the **Pools** tab. Mining starts within about a minute.
+
+### Upgrading (no SD card)
+
+From v1.4.5 on, a new release installs from the panel: **Settings → Firmware update**, then either
+**Check for updates** (the miner gets the latest release from GitHub itself) or choose the release's
+`sclite-update-v….tar.gz` file and **Check file**. Then **Install**. Your settings, pools, presets and
+schedule stay. The miner reboots into the new version, and if that doesn't start properly it goes back to
+the previous one by itself. Installing v1.4.5 itself, over any earlier version, still takes one SD flash.
 
 The full steps, troubleshooting and how to go back to stock are in the
 [release notes](../../releases/latest).
