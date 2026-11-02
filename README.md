@@ -52,12 +52,14 @@ or a phone.
 
 ### Upgrading (no SD card)
 
-From v1.4.6 on, a new release installs from the panel: **Settings → Firmware update**, then either
+From v1.4.8 on, a new release installs from the panel: **Settings → Firmware update**, then either
 **Check for updates** (the miner gets the latest release from GitHub itself) or choose the release's
 `sclite-update-v….tar.gz` file and **Check file**. Then **Install**. Your settings, pools, presets and
 schedule stay. The miner reboots into the new version, and if that doesn't start properly it goes back to
-the previous one by itself. Getting v1.4.6 itself onto an earlier version takes one SD flash (from v1.4.5,
-SSH in and run `mount -o remount,rw /` first, then the panel update works).
+the previous one by itself. Getting v1.4.8 itself onto v1.4.4 or earlier takes one SD flash.
+
+v1.4.5 and v1.4.6 were withdrawn: their panel didn't start. If you flashed one, flash v1.4.8 from an SD
+card.
 
 The full steps, troubleshooting and how to go back to stock are in the
 [release notes](../../releases/latest).
