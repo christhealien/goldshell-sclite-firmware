@@ -18,12 +18,12 @@ or a phone.
 |---|---|
 | Dashboard | live hashrate, temperatures, fans and shares; power and J/TH (calibrate with a wall meter); 24-hour hashrate chart; best-share record; chip map |
 | Controls & fan | clock and voltage; fan curves (built-in, your own, and tuner-made, all editable) |
-| Presets | saved clock, voltage and fan settings, switched in one click |
+| Presets | saved clock, voltage and fan settings, switched in one click; built-in Stock and Idle |
 | Schedule | presets by time and day; scheduled restarts |
 | Pools | add, edit, reorder and remove pools |
-| Tuner | finds and confirms good clock and voltage settings; saves them as presets |
-| Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer |
-| Settings | firmware update, password, SSH, MAC address, chip trims (experimental, with a self-test and a downloadable report), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
+| Tuner | finds and confirms good clock and voltage settings, optionally trimming weak chips; saves them as presets |
+| Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer; save the logs, or a copy with private details taken out |
+| Settings | firmware update, password, SSH, MAC address, chip trims (with auto-trim, a self-test and a downloadable report), power calibration, time zone, notifications (Telegram or Discord), display units, restart and reboot |
 
 ### Compared with stock
 
@@ -54,12 +54,13 @@ or a phone.
 
 From v1.4.8 on, a new release installs from the panel: **Settings → Firmware update**, then either
 **Check for updates** (the miner gets the latest release from GitHub itself) or choose the release's
-`sclite-update-v….tar.gz` file and **Check file**. Then **Install**. Your settings, pools, presets and
-schedule stay. The miner reboots into the new version, and if that doesn't start properly it goes back to
-the previous one by itself. Getting v1.4.8 itself onto v1.4.4 or earlier takes one SD flash.
+`sclite-update-v….tar.gz` file and **Check file**, which works without internet (you can paste the
+release's SHA256SUMS to confirm it's the published file). Then **Install**. Your settings, pools, presets
+and schedule stay. The miner reboots into the new version, and if that doesn't start properly it goes back
+to the previous one by itself. Getting v1.4.8 or later onto v1.4.4 or earlier takes one SD flash.
 
-v1.4.5 and v1.4.6 were withdrawn: their panel didn't start. If you flashed one, flash v1.4.8 from an SD
-card.
+v1.4.5 and v1.4.6 were withdrawn: their panel didn't start. If you flashed one, flash the latest release
+from an SD card.
 
 The full steps, troubleshooting and how to go back to stock are in the
 [release notes](../../releases/latest).
