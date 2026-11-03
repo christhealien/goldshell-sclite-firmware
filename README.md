@@ -21,7 +21,7 @@ or a phone.
 | Presets | saved clock, voltage and fan settings, switched in one click; built-in Stock and Idle |
 | Schedule | presets by time and day; scheduled restarts |
 | Pools | add, edit, reorder and remove pools |
-| Tuner | walks clock and voltage in fine 50 mV steps, confirms the winner, optionally trims weak chips, and saves tested presets with their own fan curves; a live run plan shows every step and attempt |
+| Tuner | walks clock and board voltage (PV 9100–9600, the range the supply delivers) in fine 50 mV steps, confirms the winner, optionally trims weak chips, and saves tested presets with their own fan curves; a live run plan shows every step and attempt |
 | Log | live miner log, colour-coded; optional verbose mode that shows every share and the pool's answer; save the logs, or a copy with private details taken out |
 | Settings | firmware update, password, SSH, MAC address, chip trims (down to −100 MHz in 12.5 MHz steps, auto-trim, a self-test and a downloadable report), power calibration, time zone, notifications (Telegram, Discord, ntfy, Gotify or a webhook; including tuning started/finished/stopped/aborted), display units, restart and reboot |
 
@@ -56,12 +56,12 @@ From v1.4.8 on, a new release installs from the panel: **Settings → Firmware u
 **Check for updates** (the miner gets the latest release from GitHub itself) or choose the release's
 `sclite-update-v….tar.gz` file and **Check file**, which works without internet (you can paste the
 release's SHA256SUMS to confirm it's the published file). Then **Install**. Your settings, pools, presets
-and schedule stay (except where a release says otherwise: see v1.5.6 below). The miner reboots into the new version, and if that doesn't start properly it goes back
+and schedule stay (except once, coming from v1.5.5 or earlier: see below). The miner reboots into the new version, and if that doesn't start properly it goes back
 to the previous one by itself. Getting v1.4.8 or later onto v1.4.4 or earlier takes one SD flash.
 
-**Upgrading to v1.5.6 starts tuning fresh.** Presets made by earlier versions were judged with a
+**Upgrading from v1.5.5 or earlier (to v1.5.6 or later) starts tuning fresh, once.** Presets made by those versions were judged with a
 hashrate reading that lagged (fixed in v1.5.5) and with voltage settings the supply ignores, so on its
-first start v1.5.6 moves your presets aside (into a backup file), puts the miner back on its stock settings,
+first start the new version moves your presets aside (into a backup file), puts the miner back on its stock settings,
 switches off a schedule that used presets, and sets auto fan back to the balanced curve if it followed a
 preset. Pools, password, network, fan settings and everything else stay. Settings → Firmware update shows
 what was done and has a button to put the old presets back. Then run the Tuner to build new ones.
