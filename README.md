@@ -17,7 +17,7 @@ or a phone.
 | Tab | What it does |
 |---|---|
 | Dashboard | live hashrate, temperatures, fans and shares; power and J/TH from the board voltage and the boards that are hashing (calibrate with a wall meter); 24-hour hashrate chart; best-share record; chip map |
-| Controls & fan | clock and board voltage (PV, 9.1–9.6 V: the range the supply really delivers); fan curves (built-in, your own, and tuner-made, all editable) |
+| Controls & fan | clock and board voltage (PV, 9.1–9.6 V: the range the supply really delivers); fan curves down to 10 % (built-in, your own, and tuner-made, all editable); Goldshell's fan check fitted to your own fans, and mining locked on Idle after a fan failure |
 | Presets | saved clock, voltage and fan settings, switched in one click; built-in Stock and Idle |
 | Schedule | presets by time and day; scheduled restarts |
 | Pools | add, edit, reorder and remove pools |
