@@ -1,7 +1,9 @@
-# Goldshell SC Lite Firmware
+# SC Lite Community Firmware
 
-Community firmware and research for the **Goldshell SC Lite** ASIC miner (Blake2b / Siacoin, control
+Community firmware and research for the **SC Lite** ASIC miner made by Goldshell (Blake2b / Siacoin, control
 board **MCB_V4_3**).
+
+> Independent project: not affiliated with, endorsed by or supported by Goldshell.
 
 It's a modified SD-card image of Goldshell's 2.2.0 firmware with a new control panel, the Goldshell cloud
 removed and the miner's internal ports locked down. Goldshell's stock 2.2.0 image, for going back to stock,
